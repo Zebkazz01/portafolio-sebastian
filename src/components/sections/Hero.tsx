@@ -198,7 +198,9 @@ const Hero = () => {
               {t('hero.cta')}
             </motion.button>
 
-            <motion.button
+            <motion.a
+              href="/cv.pdf"
+              download
               whileHover={{ scale: 1.08, y: -3 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: 'spring', stiffness: 400, damping: 17 }}
@@ -212,10 +214,12 @@ const Hero = () => {
                 fontSize: '1rem',
                 border: '1px solid rgba(255, 255, 255, 0.15)',
                 cursor: 'pointer',
+                textDecoration: 'none',
+                display: 'inline-block',
               }}
             >
               {t('hero.downloadCV')}
-            </motion.button>
+            </motion.a>
           </motion.div>
         </motion.div>
 
