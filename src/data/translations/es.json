@@ -1,0 +1,203 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "projects": "Proyectos",
+    "services": "Servicios",
+    "skills": "Tecnologías",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Sebastián Castillo",
+    "title": "Desarrollador Web Full Stack",
+    "subtitle": "Construyendo soluciones digitales escalables y eficientes",
+    "cta": "Ver Proyectos",
+    "downloadCV": "Descargar CV",
+    "scroll": "Scrollea",
+    "roles": [
+      "Frontend",
+      "Backend",
+      "Ingeniero",
+      "Programador",
+      "Creador",
+      "Innovador",
+      "Arquitecto",
+      "DevOps",
+      "Diseñador UI",
+      "Analista"
+    ]
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Desarrollador Web Full Stack con más de 3 años de experiencia especializado en la optimización de plataformas y automatización de procesos empresariales. Experto en el desarrollo de aplicaciones web escalables y APIs robustas utilizando JavaScript, Python y PHP, con dominio avanzado en tecnologías backend y frontend modernas.",
+    "description2": "Sólida experiencia en la implementación de arquitecturas MVC, patrones de diseño SOLID y metodologías ágiles como Scrum. Comprometido con la entrega de soluciones técnicas eficientes que generen impacto significativo en la productividad y operación del negocio.",
+    "experience": "Años de experiencia",
+    "projects": "Proyectos completados",
+    "technologies": "Tecnologías dominadas",
+    "location": "Bogotá, Colombia"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Mi trayectoria profesional",
+    "present": "Presente",
+    "jobs": [
+      {
+        "title": "Desarrollador Full Stack & DevOps",
+        "company": "PRLCOL S.A.S.",
+        "location": "Tocancipá, Cundinamarca",
+        "period": "Sep 2024 - Presente",
+        "description": "Desarrollo de soluciones backend escalables y administración de infraestructura de servidores para sistemas empresariales críticos.",
+        "achievements": [
+          "Desarrollo de APIs robustas con Node.js y PHP para integración de sistemas empresariales",
+          "Administración y optimización de bases de datos PostgreSQL para alto rendimiento",
+          "Implementación de contenedores Docker para despliegue y orquestación de aplicaciones",
+          "Gestión de servidores Linux y configuración de entornos de producción seguros"
+        ]
+      },
+      {
+        "title": "Desarrollador Web Full Stack",
+        "company": "GO ASESORES LTDA",
+        "location": "Tocancipá, Cundinamarca",
+        "period": "Sep 2023 - Ago 2024",
+        "description": "Desarrollo de aplicaciones web escalables y APIs RESTful para sistemas ERP personalizados, implementando patrones de diseño MVC, SOLID y DRY utilizando diversos frameworks backend incluyendo Django.",
+        "achievements": [
+          "Implementación de módulos backend robustos para gestión de riesgo y planificación empresarial con MySQL",
+          "Desarrollo de interfaces Frontend responsivas con HTML5, CSS3, JavaScript y Angular",
+          "Integración de servicios web externos mediante APIs RESTful, mejorando la interoperabilidad entre sistemas en un 40%",
+          "Desarrollo de Dashboards personalizados y sistemas de reportes dinámicos"
+        ]
+      },
+      {
+        "title": "Desarrollador Web Junior",
+        "company": "EMSERCHIA E.S.P.",
+        "location": "Chía, Cundinamarca",
+        "period": "Ago 2022 - Ago 2023",
+        "description": "Desarrollo de aplicaciones web innovadoras utilizando stack tecnológico diverso incluyendo backend con Python y frontend con JavaScript, HTML5, CSS3.",
+        "achievements": [
+          "Implementación de APIs RESTful y optimización de consultas MySQL, mejorando el rendimiento en un 30%",
+          "Desarrollo de interfaces gráficas intuitivas aplicando principios UX/UI, reduciendo la tasa de rebote en un 30%",
+          "Realización de tests funcionales y unitarios aplicando metodologías TDD",
+          "Gestión eficiente de bases de datos MySQL incluyendo diseño de esquemas y sistemas de respaldo"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Educación",
+    "subtitle": "Mi formación académica y certificaciones",
+    "degreesTitle": "Títulos Académicos",
+    "coursesTitle": "Cursos y Certificaciones",
+    "coursesDescription": "Formación continua en tecnologías modernas de desarrollo web y metodologías ágiles.",
+    "moreCertifications": "certificaciones adicionales en plataformas especializadas",
+    "degrees": [
+      {
+        "title": "Ingeniero de Sistemas",
+        "institution": "Universidad Corporación Unificada Nacional de Educación Superior (CUN)",
+        "location": "Bogotá, Colombia",
+        "period": "2023 - 2025",
+        "status": "Graduado"
+      },
+      {
+        "title": "Tecnólogo en Análisis y Desarrollo de Sistemas de Información",
+        "institution": "Servicio Nacional de Aprendizaje SENA",
+        "location": "Chía, Colombia",
+        "period": "2021 - 2023",
+        "status": "Graduado"
+      },
+      {
+        "title": "Estudios Complementarios de Programación",
+        "institution": "Alura Latam",
+        "location": "Virtual",
+        "period": "2021 - 2022",
+        "status": "Completado"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "subtitle": "Una selección de trabajos que demuestran mis habilidades",
+    "viewLive": "Ver Demo",
+    "viewCode": "Ver Código",
+    "featured": "Destacado",
+    "all": "Todos",
+    "filter": "Filtrar por tecnología"
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Lo que puedo hacer por ti",
+    "items": [
+      {
+        "title": "Desarrollo Web Full Stack",
+        "description": "Aplicaciones web escalables y mantenibles utilizando React, Angular, Django, Laravel y Node.js con las mejores prácticas.",
+        "icon": "web"
+      },
+      {
+        "title": "Desarrollo Frontend",
+        "description": "Interfaces de usuario modernas y responsivas con React, Angular, Vue.js y tecnologías CSS avanzadas como Tailwind.",
+        "icon": "frontend"
+      },
+      {
+        "title": "Desarrollo Backend",
+        "description": "Arquitecturas de servidor robustas con Node.js, Python, PHP y frameworks como Express, Django y Laravel.",
+        "icon": "backend"
+      },
+      {
+        "title": "Desarrollo de APIs",
+        "description": "APIs RESTful robustas y seguras, integración de servicios externos y optimización de rendimiento.",
+        "icon": "api"
+      },
+      {
+        "title": "Sistemas ERP",
+        "description": "Desarrollo de módulos personalizados para sistemas ERP, dashboards y reportes dinámicos empresariales.",
+        "icon": "erp"
+      },
+      {
+        "title": "Optimización de Bases de Datos",
+        "description": "Diseño de esquemas, optimización de consultas MySQL y MongoDB, y sistemas de respaldo.",
+        "icon": "database"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Tecnologías",
+    "subtitle": "Herramientas y tecnologías que domino",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Base de Datos",
+    "tools": "Herramientas",
+    "methodologies": "Metodologías"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tienes un proyecto en mente? ¡Hablemos!",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje",
+    "success": "¡Mensaje enviado correctamente!",
+    "error": "Error al enviar el mensaje",
+    "getInTouch": "Ponte en contacto",
+    "emailLabel": "Correo",
+    "phoneLabel": "Teléfono",
+    "locationLabel": "Ubicación",
+    "info": {
+      "email": "zebkazz01@gmail.com",
+      "phone": "+57 318 722 6478",
+      "location": "Bogotá, Colombia",
+      "linkedin": "linkedin.com/in/sebastian-castillop",
+      "github": "github.com/Zebkazz01"
+    }
+  },
+  "footer": {
+    "name": "Juan Sebastián Castillo Parra",
+    "rights": "Todos los derechos reservados",
+    "madeWith": "Hecho con"
+  },
+  "language": {
+    "es": "Español",
+    "en": "English"
+  }
+}

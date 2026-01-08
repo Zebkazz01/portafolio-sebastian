@@ -1,0 +1,636 @@
+@import "tailwindcss";
+
+/* Google Fonts via @import with display=swap for better performance */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+/* Custom CSS Variables - Dark Theme (Default) */
+:root {
+  --space-dark: #0a0a0f;
+  --space-deeper: #050508;
+  --space-purple: #1a0a2e;
+  --space-blue: #0d1b2a;
+  --nebula-pink: #ff6b9d;
+  --nebula-purple: #c44dff;
+  --nebula-blue: #4d7fff;
+
+  /* Semantic variables */
+  --bg-primary: #050508;
+  --bg-secondary: #0a0a1a;
+  --bg-card: rgba(10, 10, 20, 0.75);
+  --bg-input: rgba(20, 20, 40, 0.6);
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --text-muted: #9a9a9a;
+  --border-default: rgba(255, 255, 255, 0.12);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+/* Light Theme Variables */
+/* Note: Space background stays dark, but cards and content get light colors */
+.light {
+  /* Space colors stay the same - always dark */
+  --space-dark: #0a0a0f;
+  --space-deeper: #050508;
+  --space-purple: #1a0a2e;
+  --space-blue: #0d1b2a;
+
+  /* Nebula colors can be slightly brighter */
+  --nebula-pink: #ff6b9d;
+  --nebula-purple: #c44dff;
+  --nebula-blue: #4d7fff;
+
+  /* Background stays dark for space theme */
+  --bg-primary: #050508;
+  --bg-secondary: #0a0a1a;
+
+  /* Cards get light colors - more transparent */
+  --bg-card: rgba(255, 255, 255, 0.75);
+  --bg-input: rgba(255, 255, 255, 0.7);
+
+  /* Text gets dark colors for light backgrounds */
+  --text-primary: #1a1a2e;
+  --text-secondary: #4a4a5a;
+  --text-muted: #6a6a7a;
+
+  /* Borders for light theme */
+  --border-default: rgba(0, 0, 0, 0.12);
+  --border-subtle: rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Smoother scroll feel */
+@supports (scrollbar-gutter: stable) {
+  html {
+    scrollbar-gutter: stable;
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #050508 0%, #0a0a1a 50%, #050510 100%);
+  color: #ffffff;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #4d7fff, #c44dff);
+  border-radius: 3px;
+}
+
+/* Glass effect - enhanced contrast */
+.glass {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-default);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.light .glass {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.glass-dark {
+  background: rgba(5, 5, 15, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* High contrast glass for contact section - more transparent */
+.glass-contact {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-default);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 60px rgba(77, 127, 255, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.light .glass-contact {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Section content backdrop for planet contrast */
+.section-backdrop {
+  background: radial-gradient(ellipse at center, rgba(10, 10, 25, 0.9) 0%, rgba(5, 5, 15, 0.7) 50%, transparent 100%);
+  border-radius: 24px;
+  padding: 2rem;
+}
+
+/* Text effects */
+.text-glow {
+  text-shadow: 0 0 20px rgba(77, 127, 255, 0.4),
+               0 0 40px rgba(77, 127, 255, 0.2);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #4d7fff 0%, #c44dff 50%, #ff6b9d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* AI-style animated gradient text - slow and professional */
+.ai-gradient-text {
+  background: linear-gradient(
+    90deg,
+    #ff6b9d,
+    #c44dff,
+    #4d7fff,
+    #00d4aa,
+    #ffcc00,
+    #ff6b9d
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: ai-gradient-flow 12s ease-in-out infinite;
+}
+
+@keyframes ai-gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Reduce animations on mobile for better performance */
+@media (max-width: 768px) {
+  .ai-gradient-text {
+    animation-duration: 20s; /* Slower animation = less GPU work */
+  }
+  .ai-border::before {
+    animation-duration: 8s;
+  }
+  .glass,
+  .glass-dark,
+  .glass-contact {
+    backdrop-filter: blur(8px); /* Reduced blur for mobile */
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  /* Disable complex effects on mobile for better performance */
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(77, 127, 255, 0.2);
+  }
+
+  .tech-icon:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Content visibility for better performance on sections below fold */
+section:not(:first-of-type) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 100vh;
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .ai-gradient-text,
+  .ai-border::before {
+    animation: none;
+  }
+  .project-card {
+    transition: none;
+  }
+  .tech-badge {
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* AI-style animated border effect */
+.ai-border {
+  position: relative;
+  background: rgba(10, 10, 20, 0.9);
+  border-radius: 12px;
+}
+
+.ai-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 14px;
+  background: linear-gradient(
+    90deg,
+    #ff6b9d,
+    #c44dff,
+    #4d7fff,
+    #00d4aa,
+    #ffcc00,
+    #ff6b9d
+  );
+  background-size: 300% 100%;
+  animation: ai-gradient-flow 4s ease infinite;
+  z-index: -1;
+}
+
+.ai-border::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: rgba(10, 10, 20, 0.95);
+  z-index: -1;
+}
+
+/* Canvas container - fixed full screen */
+.canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.canvas-container canvas {
+  pointer-events: auto;
+}
+
+/* Content overlay - sits above canvas */
+.content-overlay {
+  position: relative;
+  z-index: 10;
+}
+
+/* Section base styles - extended scroll space for longer planet visibility */
+section {
+  min-height: 6000vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 580rem 1.5rem;
+}
+
+/* First section (Hero) - large space for galaxy + rocket depth effect */
+section:first-of-type {
+  min-height: 8000vh;
+  padding: 780rem 1.5rem;
+}
+
+/* Last section - ensure Saturn is visible at end */
+section:last-of-type {
+  min-height: 4000vh;
+  padding: 380rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 585rem 3rem;
+  }
+  section:first-of-type {
+    padding: 785rem 3rem;
+  }
+  section:last-of-type {
+    padding: 385rem 3rem;
+  }
+}
+
+/* Project card - super smooth animations */
+.project-card {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              background 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform, box-shadow;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  background: rgba(15, 15, 30, 0.85);
+  box-shadow: 0 25px 50px rgba(77, 127, 255, 0.25), 0 0 80px rgba(77, 127, 255, 0.15);
+  border-color: rgba(77, 127, 255, 0.4);
+}
+
+.light .project-card:hover {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 25px 50px rgba(77, 127, 255, 0.2), 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-color: rgba(77, 127, 255, 0.5);
+}
+
+/* Tech badge - super smooth */
+.tech-badge {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.tech-badge:hover {
+  transform: scale(1.08) translateY(-2px);
+  box-shadow: 0 8px 20px rgba(77, 127, 255, 0.2);
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a, button {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Glass elements smooth transitions */
+.glass, .glass-dark, .glass-contact {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              border-color 0.3s ease;
+}
+
+/* Tech icon smooth animation */
+.tech-icon {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.tech-icon:hover {
+  transform: scale(1.15) rotate(5deg);
+}
+
+/* Font classes */
+.font-space {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Utility classes for spacing */
+.section-padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-padding {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* ========================================
+   SKELETON LOADING ANIMATIONS
+   ======================================== */
+
+@keyframes skeleton-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton-pulse {
+  background: linear-gradient(
+    90deg,
+    rgba(77, 127, 255, 0.08) 25%,
+    rgba(196, 77, 255, 0.12) 50%,
+    rgba(77, 127, 255, 0.08) 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+  border-radius: 8px;
+}
+
+.section-skeleton {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.skeleton-content {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skeleton-title {
+  height: 48px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.skeleton-text {
+  height: 20px;
+  width: 100%;
+}
+
+.skeleton-text.short {
+  width: 60%;
+}
+
+/* Reduce skeleton animation for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-pulse {
+    animation: none;
+    background: rgba(77, 127, 255, 0.1);
+  }
+}
+
+/* ========================================
+   SKIP LINK (Accessibility)
+   ======================================== */
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #4d7fff, #c44dff);
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 0 0 12px 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  z-index: 9999;
+  transition: top 0.3s ease;
+  box-shadow: 0 4px 20px rgba(77, 127, 255, 0.4);
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* ========================================
+   FOCUS VISIBLE STYLES (Accessibility)
+   ======================================== */
+
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 2px solid #4d7fff;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #c44dff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(196, 77, 255, 0.2);
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid #4d7fff;
+  outline-offset: 0;
+  border-color: #4d7fff !important;
+  box-shadow: 0 0 0 3px rgba(77, 127, 255, 0.2);
+}
+
+/* ========================================
+   SCREEN READER ONLY UTILITY
+   ======================================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* ========================================
+   WCAG AA COMPLIANT COLORS
+   Improved contrast ratios for accessibility
+   ======================================== */
+
+.text-muted-accessible {
+  color: #9a9a9a; /* 5.7:1 ratio - passes WCAG AA */
+}
+
+.text-subtle-accessible {
+  color: #8a8a8a; /* 4.6:1 ratio - passes WCAG AA for large text */
+}
+
+/* ========================================
+   RESPONSIVE GRID LAYOUTS
+   ======================================== */
+
+/* Skills grid - 4 columns on large screens, responsive on smaller */
+.skills-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1100px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Services grid - 3 columns on large screens, responsive on smaller */
+.services-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact container - fixed width to prevent resize on language change */
+.contact-container {
+  width: 600px;
+}
+
+@media (max-width: 650px) {
+  .contact-container {
+    width: 100%;
+  }
+}
+
+/* Contact grid - stack on mobile */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+}
+
+/* Education grid - stack on mobile */
+@media (max-width: 768px) {
+  .education-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Experience grid - stack on mobile */
+@media (max-width: 768px) {
+  .experience-grid {
+    grid-template-columns: 1fr !important;
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "services": "Services",
+    "skills": "Technologies",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Sebastián Castillo",
+    "title": "Full Stack Web Developer",
+    "subtitle": "Building scalable and efficient digital solutions",
+    "cta": "View Projects",
+    "downloadCV": "Download CV",
+    "scroll": "Scroll",
+    "roles": [
+      "Frontend",
+      "Backend",
+      "Engineer",
+      "Programmer",
+      "Creator",
+      "Innovator",
+      "Architect",
+      "DevOps",
+      "UI Designer",
+      "Analyst"
+    ]
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Full Stack Web Developer with over 3 years of experience specialized in platform optimization and business process automation. Expert in developing scalable web applications and robust APIs using JavaScript, Python, and PHP, with advanced mastery of modern backend and frontend technologies.",
+    "description2": "Solid experience implementing MVC architectures, SOLID design patterns, and agile methodologies like Scrum. Committed to delivering efficient technical solutions that generate significant impact on business productivity and operations.",
+    "experience": "Years of experience",
+    "projects": "Completed projects",
+    "technologies": "Technologies mastered",
+    "location": "Bogotá, Colombia"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "My professional journey",
+    "present": "Present",
+    "jobs": [
+      {
+        "title": "Full Stack Developer & DevOps",
+        "company": "PRLCOL S.A.S.",
+        "location": "Tocancipá, Cundinamarca",
+        "period": "Sep 2024 - Present",
+        "description": "Development of scalable backend solutions and server infrastructure administration for critical enterprise systems.",
+        "achievements": [
+          "Development of robust APIs with Node.js and PHP for enterprise systems integration",
+          "Administration and optimization of PostgreSQL databases for high performance",
+          "Implementation of Docker containers for application deployment and orchestration",
+          "Linux server management and secure production environment configuration"
+        ]
+      },
+      {
+        "title": "Full Stack Web Developer",
+        "company": "GO ASESORES LTDA",
+        "location": "Tocancipá, Cundinamarca",
+        "period": "Sep 2023 - Aug 2024",
+        "description": "Development of scalable web applications and RESTful APIs for custom ERP systems, implementing MVC, SOLID, and DRY design patterns using various backend frameworks including Django.",
+        "achievements": [
+          "Implementation of robust backend modules for risk management and business planning with MySQL",
+          "Development of responsive Frontend interfaces with HTML5, CSS3, JavaScript, and Angular",
+          "Integration of external web services through RESTful APIs, improving system interoperability by 40%",
+          "Development of custom Dashboards and dynamic reporting systems"
+        ]
+      },
+      {
+        "title": "Junior Web Developer",
+        "company": "EMSERCHIA E.S.P.",
+        "location": "Chía, Cundinamarca",
+        "period": "Aug 2022 - Aug 2023",
+        "description": "Development of innovative web applications using diverse technology stack including backend with Python and frontend with JavaScript, HTML5, CSS3.",
+        "achievements": [
+          "Implementation of RESTful APIs and MySQL query optimization, improving performance by 30%",
+          "Development of intuitive graphical interfaces applying UX/UI principles, reducing bounce rate by 30%",
+          "Execution of functional and unit tests applying TDD methodologies",
+          "Efficient MySQL database management including schema design and backup systems"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "My academic background and certifications",
+    "degreesTitle": "Academic Degrees",
+    "coursesTitle": "Courses & Certifications",
+    "coursesDescription": "Continuous learning in modern web development technologies and agile methodologies.",
+    "moreCertifications": "additional certifications on specialized platforms",
+    "degrees": [
+      {
+        "title": "Systems Engineer",
+        "institution": "Universidad Corporación Unificada Nacional de Educación Superior (CUN)",
+        "location": "Bogotá, Colombia",
+        "period": "2023 - 2025",
+        "status": "Graduated"
+      },
+      {
+        "title": "Technologist in Information Systems Analysis and Development",
+        "institution": "Servicio Nacional de Aprendizaje SENA",
+        "location": "Chía, Colombia",
+        "period": "2021 - 2023",
+        "status": "Graduated"
+      },
+      {
+        "title": "Complementary Programming Studies",
+        "institution": "Alura Latam",
+        "location": "Virtual",
+        "period": "2021 - 2022",
+        "status": "Completed"
+      }
+    ]
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "A selection of work that demonstrates my skills",
+    "viewLive": "Live Demo",
+    "viewCode": "View Code",
+    "featured": "Featured",
+    "all": "All",
+    "filter": "Filter by technology"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What I can do for you",
+    "items": [
+      {
+        "title": "Full Stack Web Development",
+        "description": "Scalable and maintainable web applications using React, Angular, Django, Laravel, and Node.js with best practices.",
+        "icon": "web"
+      },
+      {
+        "title": "Frontend Development",
+        "description": "Modern and responsive user interfaces with React, Angular, Vue.js, and advanced CSS technologies like Tailwind.",
+        "icon": "frontend"
+      },
+      {
+        "title": "Backend Development",
+        "description": "Robust server architectures with Node.js, Python, PHP, and frameworks like Express, Django, and Laravel.",
+        "icon": "backend"
+      },
+      {
+        "title": "API Development",
+        "description": "Robust and secure RESTful APIs, external service integration, and performance optimization.",
+        "icon": "api"
+      },
+      {
+        "title": "ERP Systems",
+        "description": "Development of custom modules for ERP systems, dashboards, and dynamic business reports.",
+        "icon": "erp"
+      },
+      {
+        "title": "Database Optimization",
+        "description": "Schema design, MySQL and MongoDB query optimization, and backup systems.",
+        "icon": "database"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Technologies",
+    "subtitle": "Tools and technologies I master",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "tools": "Tools",
+    "methodologies": "Methodologies"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind? Let's talk!",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent successfully!",
+    "error": "Error sending message",
+    "getInTouch": "Get in touch",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "info": {
+      "email": "zebkazz01@gmail.com",
+      "phone": "+57 318 722 6478",
+      "location": "Bogotá, Colombia",
+      "linkedin": "linkedin.com/in/sebastian-castillop",
+      "github": "github.com/Zebkazz01"
+    }
+  },
+  "footer": {
+    "name": "Juan Sebastián Castillo Parra",
+    "rights": "All rights reserved",
+    "madeWith": "Made with"
+  },
+  "language": {
+    "es": "Español",
+    "en": "English"
+  }
+}

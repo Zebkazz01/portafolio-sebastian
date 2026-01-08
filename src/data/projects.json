@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "title": {
+      "es": "Sistema de Ingresos y Egresos",
+      "en": "Income & Expense System"
+    },
+    "description": {
+      "es": "Sistema Full Stack para gestión de ingresos y egresos. Prueba técnica que demuestra capacidades completas de desarrollo con TypeScript, arquitectura limpia y mejores prácticas.",
+      "en": "Full Stack system for income and expense management. Technical assessment demonstrating complete development capabilities with TypeScript, clean architecture and best practices."
+    },
+    "image": "/projects/sistema-ingresos.jpg",
+    "technologies": ["TypeScript", "React", "Node.js", "MySQL"],
+    "githubUrl": "https://github.com/Zebkazz01/Sistema_ingresos_egresos",
+    "featured": true
+  },
+  {
+    "id": "2",
+    "title": {
+      "es": "App Manager Task (MERN)",
+      "en": "Task Manager App (MERN)"
+    },
+    "description": {
+      "es": "Aplicación de gestión de tareas construida con el stack MERN. Incluye validación de usuarios, autenticación JWT, implementación de middleware y arquitectura RESTful.",
+      "en": "Task management application built with MERN stack. Includes user validation, JWT authentication, middleware implementation and RESTful architecture."
+    },
+    "image": "/projects/task-manager.jpg",
+    "technologies": ["MongoDB", "Express", "React", "Node.js", "JWT"],
+    "githubUrl": "https://github.com/Zebkazz01/App_manager_task",
+    "featured": true
+  },
+  {
+    "id": "3",
+    "title": {
+      "es": "Software Facturación Restaurante",
+      "en": "Restaurant Billing Software"
+    },
+    "description": {
+      "es": "Sistema integral de gestión para restaurantes con procesamiento de pedidos, control de inventario (Kardex), administración de productos y facturación electrónica.",
+      "en": "Comprehensive restaurant management system with order processing, inventory control (Kardex), product administration and electronic billing."
+    },
+    "image": "/projects/facturacion.jpg",
+    "technologies": ["PHP", "MySQL", "JavaScript", "Bootstrap"],
+    "githubUrl": "https://github.com/Zebkazz01/Software_Facturacion_restaurante",
+    "featured": true
+  },
+  {
+    "id": "4",
+    "title": {
+      "es": "API REST MERN",
+      "en": "MERN REST API"
+    },
+    "description": {
+      "es": "Backend API robusta para procesamiento de datos, gestión de tokens y conectividad con bases de datos. Implementa patrones de diseño y arquitectura escalable.",
+      "en": "Robust backend API for data processing, token management and database connectivity. Implements design patterns and scalable architecture."
+    },
+    "image": "/projects/api-rest.jpg",
+    "technologies": ["Node.js", "Express", "MongoDB", "JWT"],
+    "githubUrl": "https://github.com/Zebkazz01/Api_rest_mern",
+    "featured": false
+  },
+  {
+    "id": "5",
+    "title": {
+      "es": "Plantilla Tienda de Cursos",
+      "en": "Course Marketplace Template"
+    },
+    "description": {
+      "es": "Plantilla de marketplace de cursos online que utiliza API REST para gestión de cursos y sesiones de usuario. Diseño moderno y responsivo.",
+      "en": "Online course marketplace template utilizing REST API for course management and user sessions. Modern and responsive design."
+    },
+    "image": "/projects/tienda-cursos.jpg",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "REST API"],
+    "githubUrl": "https://github.com/Zebkazz01/Plantilla_tienda_cursos",
+    "featured": false
+  },
+  {
+    "id": "6",
+    "title": {
+      "es": "Juego de Preguntas EmserKids",
+      "en": "EmserKids Quiz Game"
+    },
+    "description": {
+      "es": "Juego educativo de preguntas con múltiples categorías, niveles de dificultad, sistema de pistas y puntuación. Desarrollado para promover el aprendizaje interactivo.",
+      "en": "Educational quiz game featuring multiple categories, difficulty levels, hints system and scoring. Developed to promote interactive learning."
+    },
+    "image": "/projects/quiz-game.jpg",
+    "technologies": ["PHP", "MySQL", "JavaScript", "CSS3"],
+    "githubUrl": "https://github.com/Zebkazz01/Juego_de_preguntas",
+    "featured": false
+  }
+]
