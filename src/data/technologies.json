@@ -1,0 +1,178 @@
+[
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "icon": "📜",
+    "category": "frontend",
+    "color": "#F7DF1E",
+    "years": "4+"
+  },
+  {
+    "id": "angular",
+    "name": "Angular",
+    "icon": "🅰️",
+    "category": "frontend",
+    "color": "#DD0031",
+    "years": "2+"
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "icon": "⚛️",
+    "category": "frontend",
+    "color": "#61DAFB",
+    "years": "1+"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "icon": "📘",
+    "category": "frontend",
+    "color": "#3178C6",
+    "years": "2+"
+  },
+  {
+    "id": "html",
+    "name": "HTML5",
+    "icon": "🌐",
+    "category": "frontend",
+    "color": "#E34F26",
+    "years": "4+"
+  },
+  {
+    "id": "css",
+    "name": "CSS3",
+    "icon": "🎯",
+    "category": "frontend",
+    "color": "#1572B6",
+    "years": "4+"
+  },
+  {
+    "id": "tailwind",
+    "name": "TailwindCSS",
+    "icon": "🎨",
+    "category": "frontend",
+    "color": "#06B6D4",
+    "years": "2+"
+  },
+  {
+    "id": "jquery",
+    "name": "jQuery",
+    "icon": "💠",
+    "category": "frontend",
+    "color": "#0769AD",
+    "years": "3+"
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "icon": "🐍",
+    "category": "backend",
+    "color": "#3776AB",
+    "years": "2+"
+  },
+  {
+    "id": "django",
+    "name": "Django",
+    "icon": "🎸",
+    "category": "backend",
+    "color": "#092E20",
+    "years": "2+"
+  },
+  {
+    "id": "php",
+    "name": "PHP",
+    "icon": "🐘",
+    "category": "backend",
+    "color": "#777BB4",
+    "years": "3+"
+  },
+  {
+    "id": "laravel",
+    "name": "Laravel",
+    "icon": "🔺",
+    "category": "backend",
+    "color": "#FF2D20",
+    "years": "2+"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "icon": "🟢",
+    "category": "backend",
+    "color": "#339933",
+    "years": "2+"
+  },
+  {
+    "id": "express",
+    "name": "Express",
+    "icon": "🚂",
+    "category": "backend",
+    "color": "#000000",
+    "years": "2+"
+  },
+  {
+    "id": "mysql",
+    "name": "MySQL",
+    "icon": "🐬",
+    "category": "database",
+    "color": "#4479A1",
+    "years": "4+"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "icon": "🍃",
+    "category": "database",
+    "color": "#47A248",
+    "years": "1+"
+  },
+  {
+    "id": "sql",
+    "name": "SQL",
+    "icon": "📊",
+    "category": "database",
+    "color": "#336791",
+    "years": "4+"
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "icon": "📦",
+    "category": "tools",
+    "color": "#F05032",
+    "years": "4+"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "icon": "🐱",
+    "category": "tools",
+    "color": "#181717",
+    "years": "4+"
+  },
+  {
+    "id": "scrum",
+    "name": "Scrum",
+    "icon": "🔄",
+    "category": "tools",
+    "color": "#6DB33F",
+    "years": "3+"
+  },
+  {
+    "id": "tdd",
+    "name": "TDD",
+    "icon": "✅",
+    "category": "tools",
+    "color": "#25A162",
+    "years": "2+"
+  },
+  {
+    "id": "restapi",
+    "name": "REST APIs",
+    "icon": "🔗",
+    "category": "tools",
+    "color": "#FF6B6B",
+    "years": "3+"
+  }
+]
